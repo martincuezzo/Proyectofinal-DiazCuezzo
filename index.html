@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega2 Diaz Cuezzo</title>
+</head>
+<body>
+    <h1>Compra tus Tickets para el Concierto</h1>
+    <p>El precio de la entrada <strong>General</strong> es $90000, mientras que la <strong>VIP</strong> tiene un valor de $140000</p>
+    <h3>Extra:</h3>
+    <p>Se debe pagar el <strong>Servicio</strong>, el cual tiene un valor de $9000</p>
+    <form id="formulario" action="" method="post">
+        <h2>Detalles del Ticket</h2>
+        <label for="sector">Selecciona el sector:</label>
+        <select name="sector" id="sector" required>
+            <option value="">- Selecciona un sector -</option>
+            <option value="general">General</option>
+            <option value="vip">VIP</option>
+        </select>
+        <label for="cantidad">Cantidad de tickets:</label>
+        <input type="number" name="cantidad" min="1" required>
+        <input type="button" id="agregarTicket" value="Agregar Ticket">
+        <input type="submit" id="comprarTickets" value="Comprar Tickets">
+    </form>
+    <div id="ticketsList">
+
+    </div>
+    <p id="msj">
+
+    </p>
+    <!-- elemento para mostrar la disponibilidad -->
+    <p id="disponibilidad"></p>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
