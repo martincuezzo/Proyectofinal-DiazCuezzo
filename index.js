@@ -20,9 +20,6 @@ const tickets = [];
 // Mostrar el mensaje en el DOM
 const mostrarMensaje = (mensaje) => {
     Swal.fire(mensaje);
-    
-    // const mensajeParrafo = document.getElementById('msj');
-    // mensajeParrafo.textContent = mensaje;
 };
 
 // Función para mostrar la disponibilidad de tickets
